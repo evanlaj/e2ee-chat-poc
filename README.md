@@ -16,4 +16,4 @@ Keys for the encryption are generated and shared using the Diffie-Hellman key ex
 ## Credits
 
 This project was made by Evan Lajusticia, inspired by [this video](https://www.youtube.com/watch?v=Yjrfm_oRO0w "Diffie Hellman -the Mathematics bit- Computerphile")
-and [this video](https://www.youtube.com/watch?v=Yjrfm_oRO0w "Realtime Chat With Users & Rooms - Socket.io, Node & Express") helped me get started.
+and [this video](https://www.youtube.com/watch?v=jD7FnbI76Hg "Realtime Chat With Users & Rooms - Socket.io, Node & Express") helped me get started.
