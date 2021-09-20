@@ -13,12 +13,15 @@ app.use(express.static(path.join(__dirname, 'public')));
 io.on('connection', socket => {
 
   socket.on('join-service', (username) => {
-    console.log(username + " (" + socket.id + ") has joined the server");
 
-    socket.broadcast.emit('new-user', {username : username, id : socket.id});
+    finalUsername = username.substring(0,16);
+
+    console.log(finalUsername + " (" + socket.id + ") has joined the server");
+
+    socket.broadcast.emit('new-user', {username : finalUsername, id : socket.id});
 
     sendUsers(socket);
-    userJoin(socket.id, username);
+    userJoin(socket.id, finalUsername);
   });
 
   socket.on('disconnect', () => {

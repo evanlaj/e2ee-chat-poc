@@ -9,7 +9,7 @@ const socket = io();
 //These 3 lines allow us to get the username of the user from the URL parameters
 const urlSearchParams = new URLSearchParams(window.location.search);
 const params = Object.fromEntries(urlSearchParams.entries());
-const username = params.user;
+const username = params.user.substring(0,16);
 
 var activeRoom = null;
 var activeHistory = null;
