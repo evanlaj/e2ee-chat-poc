@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <title>E2EE Chat - Chatrooms</title>
+  </head>
+  <body>
+
+    <div id="app">
+      <div id="app-bg"></div>
+      <div id="left-panel">
+        <div id="user-list-wrapper">
+          Liste des utilisateurs
+          <div id="user-list"></div>
+        </div>
+      </div>
+      <div id="right-panel">
+        <div id="welcome">Démarrez une conversation pour qu'elle apparaisse ici (:</div>
+        <div id="chat-input-wrapper">
+          <input id="chat-input" type=text placeholder="Envoyer un message..." autocomplete="off" spellcheck=false value="">
+          <button id="button-chat-input">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fillRule="evenodd" clipRule="evenodd" d="M13 15.6024C13 15.4011 13 15.3004 13.0424 15.2373C13.0794 15.182 13.1369 15.1438 13.2022 15.1311C13.2769 15.1166 13.3697 15.1557 13.5552 15.2338L33.4994 23.6313C33.7747 23.7472 33.9123 23.8052 33.9538 23.887C33.9898 23.958 33.9898 24.042 33.9538 24.113C33.9123 24.1948 33.7747 24.2528 33.4994 24.3687L13.5552 32.7662C13.3697 32.8443 13.2769 32.8834 13.2022 32.8689C13.1369 32.8562 13.0794 32.818 13.0424 32.7627C13 32.6996 13 32.5989 13 32.3976V26.5623C13 26.4506 13 26.3948 13.0195 26.3484C13.0367 26.3074 13.0646 26.2717 13.1002 26.2451C13.1405 26.2149 13.1947 26.2013 13.303 26.1743L20.4478 24.3881C20.9038 24.2741 21.1318 24.2171 21.1849 24.1265C21.2307 24.0484 21.2307 23.9516 21.1849 23.8735C21.1318 23.7829 20.9038 23.7259 20.4478 23.6119L13.303 21.8257C13.1947 21.7987 13.1405 21.7851 13.1002 21.7549C13.0646 21.7283 13.0367 21.6926 13.0195 21.6516C13 21.6052 13 21.5494 13 21.4377V15.6024Z" />
+            </svg>
+          </button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+    <script src='/socket.io/socket.io.js'></script>
+    <script src='./js/diffie-hellman.js'></script>
+    <script src='./js/rooms.js'></script>
+    <script src='./js/app.js'></script>
+
+  </body>
+</html>
