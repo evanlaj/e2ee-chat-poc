@@ -7,11 +7,15 @@ Il a été réalisé avec NodeJS, Socket.IO, Express et CryptoJS.
 
 Les clés de chiffrement sont générées et partagée en utilisant le principe d'échange de clé de Diffie-Hellman.
 
+L'application est en français, mais la totalité du code ainsi que les commentaires sont en anglais.
+
 ## Description (EN)
 
 This project is a small socket-based realtime chat with end-to-end encryption using NodeJS, Socket.IO, Express and CryptoJS.
 
 Keys for the encryption are generated and shared using the Diffie-Hellman key exchange protocole.
+
+The app is in french, but the whole code, including comments, is in english.
 
 ## Credits
 
